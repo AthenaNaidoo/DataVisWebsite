@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(33, 34, 39);
+    color: rgb(241, 246, 245);
+}
+.heading{
+    text-align: center;
+}
+.BlogPost{
+    background-color: rgba(117, 150, 252, 0.581);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
