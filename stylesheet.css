@@ -2,9 +2,54 @@ body{
     background-color: rgb(33, 34, 39);
     color: rgb(241, 246, 245);
 }
+
+.nav a{
+    text-decoration: none;
+    color: rgb(241, 246, 245);
+    position: fixed;
+    padding-left: 5px;
+
+}
+
+
+
 .heading{
     text-align: center;
+    ;
 }
+/*
+Homepage
+*/
+
+.Home .homeP ul{
+    list-style: none;
+}
+
+.Home .homeP li{
+    text-align: center;
+    display: inline;
+    margin-right: 10px;
+}
+
+.Home .homeP li a{
+    
+    padding-right: 10px;
+    text-decoration: none;
+    color: rgb(241, 246, 245);
+}
+ 
+.title{
+    text-align: center;
+}
+
+.Home{
+    background-color: rgb(33, 34, 39);
+}
+
+
+/*
+Blog Section
+*/
 .BlogPost{
     background-color: rgba(117, 150, 252, 0.581);
     padding-left: 20px;
@@ -16,4 +61,27 @@ body{
     margin-right: 60px;
     margin-bottom: 60px;
     text-align: center;
+}
+
+/*
+Design Section
+*/
+
+.WireList{
+    list-style-type: none;
+}
+
+.WireList img{
+    display: block;
+    width: 600px;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.PImg img{
+    display: block;
+    width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
