@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(33, 34, 39);
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(0, 0, 0);
     color: rgb(241, 246, 245);
 }
 
@@ -43,15 +44,51 @@ Homepage
 }
 
 .Home{
-    background-color: rgb(33, 34, 39);
+    background-color: rgb(0, 0, 0);
 }
 
+.intro{
+    background-image: url(img/EarthAtTwilight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px 100px;
+    text-shadow: 0px 2px 5px  black;
+}
+
+.blog{
+   background-image: url(img/JW.png); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 10px 50px 100px;
+   text-shadow: 0px 2px 5px  black;
+}
+
+.data{
+    background-image: url(img/pillars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px 100px;
+    text-shadow: 0px 2px 5px  black;
+}
+
+#button {
+    background-color: #000000; 
+    border-radius: 5px 0px;
+    border-color: rgb(246, 249, 249);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 /*
 Blog Section
 */
 .BlogPost{
-    background-color: rgba(117, 150, 252, 0.581);
+    background-color: rgba(117, 151, 252, 0.525);
+    border: solid 1px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 1px;
@@ -61,6 +98,11 @@ Blog Section
     margin-right: 60px;
     margin-bottom: 60px;
     text-align: center;
+}
+
+.BlogPost img{
+display: block;
+width: 300px;
 }
 
 /*
@@ -85,3 +127,25 @@ Design Section
     padding-left: 50px;
     padding-right: 50px;
 }
+
+.NeWire{
+    list-style: none;
+}
+
+.NeWire  img{
+    display: block;
+    width: 500px;
+    margin: 10px;
+    padding-left: 100px;
+}
+
+.SG {
+    display: block;
+    width: 400px;
+    margin-top: 10px;
+    padding-left: 100px;
+}
+/*
+Data Vis
+*/
+
