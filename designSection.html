@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Section</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="nav">
         <a href="index.htm">Home</a>
     </nav>
-    <section>
+    <section class="designSectList">
+        <ul>
+            <li><a href="#WireF">Wireframes</a></li>
+            <li><a href="#StyleG">Styleguide</a></li>
+            <li><a href="#DVplan">Data visualisation planning</a></li>
+        </ul>
+    </section>
+    <section id="DesignExt">
         <h2 class="heading">
+            Design goals and intentions
+        </h2>
+        <p class="designP">
+            I wanted to create a fake company to help guide the site and give me a bit more direction. The 
+            website's aesthetic is largely inspired by the <a href="https://www.spacex.com/">SpaceX</a> as well as 
+             <a href="https://www.starlink.com/">Starlink</a>. I want the site to have a minamalist look that mostly uses a black and white colour pallet 
+             that incorporates images from NASA's photo libraries. 
+        </p>
+    </section>
+    
+    <section>
+        <h2 id="WireF" class="heading">
             Wireframes
         </h2>
         <ul class="NeWire">
@@ -31,7 +53,7 @@
         
     </section>
     <section>
-        <h2 class="heading">
+        <h2 id="StyleG" class="heading">
             Style Guide
         </h2>
         <div >
@@ -41,11 +63,47 @@
             <section class="PImg">
                 <img src="./img/Screenshot 2023-08-14 163543.png" alt="">
             </section>
-            <section>
+            <section class="PImg">
                 <img class="SG" src="./img/styleGuide1.png" alt="">
             </section>
         </div>
     </section>
+    <section class="DVPlanning">
+        <h2 id="DVplan" class="heading">
+            Data visualisation planning
+        </h2>
+       <h3 class="heading">
+        Bar graph
+       </h3>
+       <img  src="./img/GraphPlan.png" alt="">
+
+    <p class="designP">
+        
+        An interactive bar graph that shows the number of images captured by each of the 3 cameras that the Mars rovers have in common.
+        On the side there are three buttons that switch between the 3 rovers.
+    </p>
+    <p class="designP">
+        This visualisation will use the Mars Rover Photos API 
+    </p>
+
+       <h3 class="heading">
+        Word Cloud 
+       </h3>
+       <img src="./img/WordCloudPlanning.png" alt="">
+       <p class="designP">
+        This word cloud displays the frequency that a key word is used in the APOD
+       </p>
+       <p class="designP">
+        This Visualisation uses the APOD API
+       </p>
+
+    </section>
+
+    <a href="#" class="to-top">
+        <button class="fas fa-cheron-up">Top</button>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
 <!---->

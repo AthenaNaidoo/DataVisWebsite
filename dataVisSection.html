@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>Data Visualisation</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav class="nav">
         <a href="index.htm">Home</a>
     </nav>
+    <h1 class="titleDV">
+        Explore the galaxy with our data visualisation
+    </h1>
+    <section class="wordcloud">
+        <h2>Word Cloud about APOD</h2>
+        <button id="button" onclick="window.location.href = './dataVis/wordCloud.html' ">view</button>
+    </section>
 
+    <section class="graph">
+        <h2></h2>
+        <button id="button" onclick="window.location.href = './wordCloud.html' ">view</button>
+    </section>
+
+    <section class="bargraph">
+        <h2>Bar Graph compairing the Mars rovers</h2>
+        <button id="button" onclick="window.location.href = './dataVis/barGraph.html' ">view</button>
+    </section>
     
 </body>
 </html>
