@@ -231,7 +231,7 @@ Design Section
     padding-right: 20px;
 }
 .designSectList a{
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
 }
 .designP{
@@ -245,6 +245,12 @@ Design Section
   margin-right: auto;
   width: 550px;
   padding-bottom: 10px;
+}
+
+.data-art-design{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /*
