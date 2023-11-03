@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
 
+<meta name="description" content="Data visualisation about space">
+<meta name="keywords" content="Mars, space, NASA, data, visualisation">
+<meta name="author" content="Athena Naidoo">
 
 </head>
 <body>
@@ -19,12 +22,15 @@
         <a href="/dataVisSection.html">Data Visualisation</a>
     </nav>
     <ul class="BGbutton">
-        <li><button>Curiosity</button></li>
-        <li><button>Oppertunity</button></li>
-        <li><button>Spirit</button></li>
+        <li><button onclick="curiosityButton()">Curiosity</button></li>
+        <li><button onclick=" opportunitybutton()">Opportunity</button></li>
+        <li><button onclick="spiritButton()">Spirit</button></li>
     </ul>
     <!-- <svg id="BG" width="600" height="600" ></svg> -->
-    <div id="buttons"></div>
+    <div id="curiosity" ></div>
+
+    <div id="opportunity" style="display: none;" ></div>
+    <div id="spirit" style="display: none;" ></div> -
     <script src="./barGraph.js"></script>
 </body>
 </html>
