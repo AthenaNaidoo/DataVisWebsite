@@ -84,6 +84,18 @@ Homepage
     font-size: 16px;
 }
 
+#button :hover{
+    background-color: #ffffff; 
+    border-radius: 5px 0px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+}
+
 /*
 About Section
 */
@@ -348,4 +360,76 @@ BG styling
     display: inline-block;
     font-size: 16px;
 }
+/* 
+Other styling 
+*/
+/* Progress scroll in blog section */
+
+
+.progress-bar{
+   background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+   height: 5px;
+   width: 0%;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+}
+
+/* photoGrid Blog Section */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .grid-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* revamp blog section Photos */
+
+  .data-art{
+    background-image: url(./img/MoonBlogPost.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px 100px;
+    
+    text-shadow: 0px 2px 5px  black;
+  }
+
+
+  .interaction-close-reading{
+    background-image: url(./img/SaturnBlogPost.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px 100px;
+    
+    text-shadow: 0px 2px 5px  black;
+  }
+
+ .critical-refection{
+    background-image: url(./img/MarsBlogPost1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px 100px;
+    
+    text-shadow: 0px 2px 5px  black;
+ } 
+
+ .liQ-close-readig{
+    background-image: url(./img/Blogpost5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 50px 100px;
+    
+    text-shadow: 0px 2px 5px  black;
+ }
+ .blog-footer{
+    width: 100%;
+    height: 200px;
+ }
+
+ /* button on hover interactions */
 

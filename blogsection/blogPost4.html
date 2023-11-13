@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 4</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<meta name="description" content="Blog about data visualisaion">
+<meta name="keywords" content="blog, theory, refection, reading, process">
+<meta name="author" content="Athena Naidoo">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.htm">Home</a>
+        <a href="/blogSection.html">Blog</a>
+    </nav>
+    <section class="heading">
+        <h1>
+            Blog Post 4 
+        </h1>
+    </section>
+ <!-- progress scroll -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <section class="BlogPost">
+        <h2>Data driven art</h2>
+        <h3>Process</h3>
+        <p>Firstly when I started thinking about what I wanted to create or achieve with a data art piece, I wanted to consider how the viewer would experience the piece. 
+            I wanted the viewer to experience it on the same level they would experience any other art piece. To achieve this I thought it would be a good idea to present 
+            the data initially with no context (no axis or labels) just a title so that they could take in the artwork as sort of separate, allowing them to experience the 
+            artwork on their own with no guidance or direction. I wanted the artwork to be pretty in some manner to the viewer or invoke a satisfied feeling as most data 
+            visualisations do. In the “What is data art?” reading there is an emphasis put on the idea that data art is united by a “forceful point of view”
+            ( Viégas & Wattenberg, 2007) and while I wanted to direct the viewer's attention to specific aspects of the data I didn’t necessarily have any specific meaning
+             that I wanted to convey.    
+        </p>
+        <p>
+            A key idea I wanted to have in mind while creating the project was I still wanted the visualisation to provide the viewer with some sort of insight into the 
+            dataset itself and for it to be set out in a way that was easy to understand.
+        </p>
+        <h3>Inspiration, research and planning</h3>
+        <p>
+            In this section I go over the inspirations, research and planning that went into coming up with my artwork and why I wanted to make certain decisions.
+        </p>
+        <p>
+            One of the first artworks that come to mind when I was starting the project was a work by Gerhard Marx titled Weather ( Marx, 2011) which is a storm cloud 
+            that is made up of plastic rulers, the work looks like a dense graph that showcases a large chunk of date to create the pattern of a cloud, I really like 
+            the idea of taking a dataset and manipulating it to form a picture that showcases the data that it utilises in someway (in this case it would be taking
+             weather data and raging it in a graph somehow to make it look like a cloud, I’m don’t think the artwork was actually constructed this way but it's what 
+             my imagination ran with). 
+        </p>
+        <p>
+            Another data visualisation that gave me some inspiration was one done by the Outside in America team that deals with the transportation of homeless people 
+            across the United States. This artwork was interesting because of how it directed the viewer through the data and how it effectively told a story through 
+            data, even though it was complemented with an article viewers can gain insight purely from viewing the data visualisations. A reason I think the visualisations
+             are so effective is due to the use of animation to tell a story.
+            (This work is explanatory and doesn’t let the viewer explore the actual dataset or satisfy any questions they may have about the dataset, it doesn’t really 
+            allow for any meaningful interaction but rather engages the user through the use of narrative and story.)
+            That’s another aspect that I noticed about data art, usually the artist is the only one who gets to explore the actual data and the visualisation acts to
+             focus the viewer's attention on a specific point of meaning.  
+
+        </p>
+        <h3>Idea, intent and data</h3>
+        <p>
+            I wanted to use the mars rover API specifically for opportunity using the data from its landing date and the data from the last day it was active. 
+            Specifically I wanted to use the amount of photos it took on each day comparing the two. I wanted to create mirrored graph-like images comparing the 
+            two in a static way as most of the data artworks given as examples in the “What is data art?”reading mainly showcased static images. I wanted to create an 
+            image that would look something like this:
+            <figure>
+                <img src="/img/DraftOfArt.png" alt="rough sketch of Data art ">
+                <figcaption>
+                    (the image above is a rough idea featuring the two different iterations of the idea)
+                </figcaption>
+            </figure>
+        </p>
+        <p>
+            The graph for the landing day would appear with the x and y axis switched while the death day 
+            graph would mirror the landing data graph giving the viewer the chance to make a comparison of 
+            the data. The main bar that encompasses all the other bars represents the total number of 
+            pictures taken in the day while the smaller bars would represent how many of those photos 
+            were taken by specific cameras. I decided rather than to go with a typical bar graph to go 
+            with a waterfall bar graph instead as I think it will allow for a clearer interpretation of 
+            the data, making it easier to compare as well as providing a more interesting visual
+        </p>
+        <p>
+            With the colour palette of the graph I wanted to put an emphasis on the idea of beginnings 
+            and endings, life and death, sunrise and sunset. 
+
+            <figure>
+                <img src="/img/colorsofLifeAndDeath.png" alt="colour pallet">
+                <figcaption>
+                    (image of the colour pallet)
+                </figcaption>
+            </figure>
+        </p>
+        <p>
+            By representing the two days as mirrored and contrasting graphs 
+            I hoped that the reader would gain insights into the data by 
+            comparison, sticking to the idea that “visualisations are meant to enable inference and insights” (Riche et al., 2018) of some sort. 
+        </p>
+
+        <details>
+            <summary>
+                References
+            </summary>
+            <p>
+                Gee , A., Lewis, P. and Sambamurthy, A. (eds.) (2017) Bussed out: How america moves thousands of homeless people around the country, The Guardian. Available at: 
+                  <a href="https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study">https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study</a></p>
+            <p>
+                Li, Q. (2020) ‘Overview of Data Visualization’, in Embodying data. Shanghai : Springer Singapore.
+            </p>
+            <p>
+                Marx, G. (2011) Weather, Goodman Gallery. Available at: 
+                <a href="https://www.goodman-gallery.com/store/shop?ref_id=15917">https://www.goodman-gallery.com/store/shop?ref_id=15917</a>
+            </p>
+            <p>
+                Riche, N.H., Hurter, C., Diakopoulos, N. and Carpendale, S. (2018) ‘Exploration and Explanation in Data- Driven Storytelling’, in Data-driven storytelling. Boca Raton, FL: CRC Press.
+            </p>
+            <p>
+                Riche, N.H., Hurter, C., Diakopoulos, N., Carpendale, S., et al. (2018) ‘Storytelling in the Wild Implications for Data Storytelling’, in Data-driven storytelling. Boca Raton, FL: CRC Press.
+                
+            </p>
+            <p>
+                Viégas, F.B. and Wattenberg, M. (2007) Artistic Data Visualization: Beyond Visual Analytics. 1 Rogers St, Cambridge, , MA 02142: Visual Communication Lab, IBM Research
+            </p>
+            <p>
+                Wu, S. (no date) An interactive visualization of every line in Hamilton, The Pudding. Available at:
+                 <a href="https://pudding.cool/2017/03/hamilton/index.html">https://pudding.cool/2017/03/hamilton/index.html</a>
+            </p>
+        </details>
+    </section>
+    
+    <script src="/blogSection.js"></script>
+</body>
+</html>
