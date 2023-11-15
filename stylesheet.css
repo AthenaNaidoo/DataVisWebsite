@@ -533,3 +533,46 @@ Other styling
     text-shadow: 0px 2px 5px  black;
 
   }
+
+  .change-art{
+    margin-left: 100px;
+  }
+/* links in blog section */
+
+.link-data-art{
+    background-image: url(./img/mars5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.link-data-vis{
+    background-image: url(./img/MarsBlogPost1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-connections section{
+    height: 100px;
+    color: white;
+    border: solid 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    text-align: center;   
+}
+.blog-connections section a{
+    margin-top: 50px;
+    color: white;
+    text-shadow: 0px 2px 5px  black;
+}
+
+.link-design{
+    background-image: url(./img/EarthAtTwilight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

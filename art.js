@@ -3,7 +3,7 @@ let api_key = "https://api.nasa.gov/DONKI/FLR?startDate=2023-01-01&endDate=2023-
 let data1=[];
 
 d3.json(api_key).then(function (data) {  
-          for (var i = 0; i < data.length; i++) {
+          for (let i = 0; i < data.length; i++) {
                firstChar = data[i].classType.charAt(0);
                num_value = parseFloat(data[i].classType.substring(1, 4));
                switch (firstChar) {
@@ -48,8 +48,8 @@ d3.json(api_key).then(function (data) {
                const maxValue = d3.max(values);
                const minValue = d3.min(values);
        
-               const cellSize = 15;
-               const yearHeight = cellSize * 7;
+               const cellSize = 20;
+               const yearHeight = cellSize * 10;
        
                const group = svg.append("g");
        
@@ -59,7 +59,7 @@ d3.json(api_key).then(function (data) {
                  .join("g")
                  .attr(
                    "transform",
-                   (d, i) => `translate(50, ${yearHeight * i + cellSize * 1.5})`
+                   (d, i) => `translate(50, ${yearHeight * i + cellSize * 2.5})`
                  );
        
                year
@@ -70,6 +70,7 @@ d3.json(api_key).then(function (data) {
                  .attr("font-size", 16)
                  .attr("font-weight", 550)
                  .attr("transform", "rotate(270)")
+                 .style('fill', 'white')
                  .text(d => d.key);
        
                const formatDay = d =>
@@ -91,6 +92,7 @@ d3.json(api_key).then(function (data) {
                  .attr("x", -5)
                  .attr("y", d => (countDay(d) + 0.5) * cellSize)
                  .attr("dy", "0.31em")
+                 .style("fill","white")
                  .attr("font-size", 12)
                  .text(formatDay);
        
@@ -164,21 +166,7 @@ d3.json(api_key).then(function (data) {
                  .attr("height", 15)
                  .on("click", toggle);
 
-       
-               legend
-                 .selectAll("text")
-                 .data(categories)
-                 .join("text")
-                 .attr("transform", "rotate(90)")
-                 .attr("y", (d, i) => -legendWidth * i)
-                 .attr("dy", -5)
-                 .attr("x", 18)
-                 .attr("text-anchor", "start")
-                 .attr("font-size", 8)
-                //  .style('fill', 'white')
-                 .text(d => `${d.lowerBound.toFixed(2)} - ${d.upperBound.toFixed(2)}`);
-       
-              
+      
              }
        
              draw();

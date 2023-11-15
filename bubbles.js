@@ -1,37 +1,11 @@
-function switchScripts() {
-    let svg1 = document.getElementById('bubble-chart');
-    let svg2 = document.getElementById('bubble-chart1');
-    if (svg1.style.display === 'none') {
-      svg1.style.display = 'block';
-      svg2.style.display = 'none';
-    } else {
-      svg1.style.display = 'none';
-      svg2.style.display = 'block';
-    }
-  }
 
 
-const file = 'NEO.json';
-const width = window.innerWidth;
-const height = window.innerHeight;
-let colors = {
-    1: '#CAA8E4',
-    2: '#957BCB',
-    3: '#7C7BCB',
-    4: '#8C9BEF',
-    5: '#7B97CB',
-    6: '#93C4E1',
-    7: '#B9EAF5',
-    8: '#B3F8FA',
-    9: '#008ECA'    
-};
-
-let drawChart = data => {
+let generateChart = data => {
     let bubble = data => d3.pack()
         .size([width, height])
-        .padding(2)(d3.hierarchy({ children: data }).sum(d => +d.v_rel*1000));
+        .padding(2)(d3.hierarchy({ children: data }).sum(d => +d.dist_max*1000));
         // dist_min
-    let svg = d3.select('#bubble-chart')
+    let svg = d3.select('#bubble-chart1')//defining the svg
         .style('width', width)
         .style('height', height);
     
@@ -44,12 +18,9 @@ let drawChart = data => {
         .attr('transform', `translate(${width / 2}, ${height / 2})`);
     
     let circle = node.append('circle')
-        .style('fill', d => colors[d.data.orbit_id])
+        .style('fill', d => colors[d.data.orbit_id])//define colors
         .on('mouseover', function (e, d) {
-            //tooltip.select('img').attr('src', d.data.img);
-            //tooltip.select('a').attr('href', d.data.link).text(d.data.des);
             tooltip.select('a').text(d.data.des);
-            //tooltip.select('span').attr('class', d.data.orbit_id).text(d.data.orbit_id);
             tooltip.style('visibility', 'visible');
 
             d3.select(this).style('stroke', '#222');
@@ -85,8 +56,8 @@ let drawChart = data => {
 d3.json('NEO.json').then(function (MyData) { 
     console.log(MyData); 
 
-    const mergedData = MyData.data.map(record => {
-        const mergedRecord = {};
+    let mergedData = MyData.data.map(record => {
+        let mergedRecord = {};
         MyData.fields.forEach((field, index) => {
           mergedRecord[field] = record[index];
         });
@@ -94,7 +65,7 @@ d3.json('NEO.json').then(function (MyData) {
       });
       
       console.log(mergedData);
-      drawChart(mergedData);
+      generateChart(mergedData);
     
 }); 
 

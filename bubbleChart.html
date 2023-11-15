@@ -26,6 +26,8 @@
         </h1>
     </section>
 <!-- data vis -->
+<button class="change-art" id="button" onclick="switchScripts()">Change</button>
+
 <svg id="bubble-chart"></svg>
 <div class="tooltip">
     <img alt="" />
@@ -35,7 +37,7 @@
     </div>
 </div>
 
-<svg id="bubble-chart1"></svg>
+<svg id="bubble-chart1" style="display: none;"></svg>
 <div class="tooltip1">
     <img alt="" />
     <div>
@@ -46,15 +48,16 @@
 
 
 <script src="https://d3js.org/d3.v6.js"></script>
-<script src="bubble.js"></script>
-<script src="bubbles.js"></script>
+<script id="bubble1" src="bubble.js"></script>
+<script id="bubble2" src="bubbles.js"></script>
+
 
     <section class="body-art">
         <h2>
             More about this visualisation
         </h2>
         <p>
-
+            This bubble chart uses the close-approach data api it plots the near earth objects within 10 lunar distances. The colour indicates the objects orbit id and the size is based on the relative velocity or the maximum approach distance.
         </p>
     </section>
     
