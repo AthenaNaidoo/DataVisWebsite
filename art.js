@@ -163,6 +163,7 @@ d3.json(api_key).then(function (data) {
                  .attr("width", legendWidth)
                  .attr("height", 15)
                  .on("click", toggle);
+
        
                legend
                  .selectAll("text")
@@ -174,14 +175,10 @@ d3.json(api_key).then(function (data) {
                  .attr("x", 18)
                  .attr("text-anchor", "start")
                  .attr("font-size", 8)
+                //  .style('fill', 'white')
                  .text(d => `${d.lowerBound.toFixed(2)} - ${d.upperBound.toFixed(2)}`);
        
-               legend
-                 .append("text")
-                 .attr("dy", -16)
-                 .attr("font-size", 16)
-                 //.attr("text-decoration", "underline")
-                 .text("Click on category to select/deselect days");
+              
              }
        
              draw();

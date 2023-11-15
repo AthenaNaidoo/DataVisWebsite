@@ -4,12 +4,17 @@ body {
     background-color: rgb(0, 0, 0);
     color: rgb(241, 246, 245);
 }
+/* .nav{
+    text-align: center;
+    text-size-adjust: ;
+} */
 
 .nav a{
     text-decoration: none;
-    color: rgb(241, 246, 245);
+    color: rgb(241, 246, 245);    
     position: fixed;
     padding-left: 5px;
+    margin-bottom: 20px;
 
 }
 
@@ -84,17 +89,7 @@ Homepage
     font-size: 16px;
 }
 
-#button :hover{
-    background-color: #ffffff; 
-    border-radius: 5px 0px;
-    border-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px; 
-}
+
 
 /*
 About Section
@@ -132,7 +127,7 @@ Blog Section
 */
 .BlogPost{
     /*background-color: rgba(117, 151, 252, 0.525);*/
-    background-image: url("./img/SIYE.jpg");
+    /* background-image: url("./img/SIYE.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -185,6 +180,11 @@ Design Section
     bottom: 16px;
     right: 10px;
 
+}
+
+.to-top button img{
+    width: 30px;
+    height: 35px;
 }
 
 .WireList{
@@ -252,6 +252,10 @@ Design Section
     padding-left: 50px;
     padding-right: 50px;
 }
+.designP a{
+    color: white;
+}
+
 .DVPlanning img{
     display: block;
     margin-left: auto;
@@ -389,12 +393,23 @@ Other styling
   }
 
   /* revamp blog section Photos */
+  .representation-data{
+    background-image: url(./img/mars5.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 100px 100px 100px;
+    
+    text-shadow: 0px 2px 5px  black;
+  }
+
 
   .data-art{
     background-image: url(./img/MoonBlogPost.jpg);
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 50px 100px;
+    padding: 10px 100px 100px 100px;
     
     text-shadow: 0px 2px 5px  black;
   }
@@ -402,34 +417,119 @@ Other styling
 
   .interaction-close-reading{
     background-image: url(./img/SaturnBlogPost.jpg);
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 50px 100px;
+    padding: 10px 100px 100px 100px;
     
     text-shadow: 0px 2px 5px  black;
   }
 
  .critical-refection{
-    background-image: url(./img/MarsBlogPost1.jpg);
+    background-image: url(./img/jupit1.jpg);
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 50px 100px;
+    padding: 10px 100px 100px 100px;
     
     text-shadow: 0px 2px 5px  black;
  } 
 
  .liQ-close-readig{
-    background-image: url(./img/Blogpost5.jpg);
+    background-image: url(./img/EarthBlog.jpg);
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 50px 100px;
+    padding: 10px 100px 100px 100px;
     
     text-shadow: 0px 2px 5px  black;
  }
+
  .blog-footer{
     width: 100%;
-    height: 200px;
+    height: 300px;
  }
 
  /* button on hover interactions */
+ article #button:hover {
+    background-color: #ffffff; 
+    box-shadow: 0px 2px 5px  rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
 
+  }
+
+  /* italic */
+  .italic{
+    font-style: italic;
+    font-weight: 900;
+  }
+  /* styling refrences*/
+  .references a{
+    color: white;
+  }
+  
+  /* blog sectiom nav */
+  .blog-nav{
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .blog-nav a{
+    text-decoration: none;
+    color: rgb(241, 246, 245);
+    text-align: center;
+    display: inline;
+    margin-right: 10px;
+    
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+  /* Data Art revamp */
+  .nav-art {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .nav-art a{
+    text-decoration: none;
+    color: rgb(241, 246, 245);
+    text-align: center;
+    display: inline;
+    margin-right: 10px;
+    
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .heading-art{
+    text-align: center;
+  }
+
+  .body-art{
+    text-align: center;
+  }
+
+  .flare-art{
+    
+    background-image: url(./img/Sun.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 100px 100px 100px;
+    margin: 0px 100px 0px 100px;
+    text-shadow: 0px 2px 5px  black;
+  }
+
+  .bubble-art{
+    
+    background-image: url(./img/Astro.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 100px 100px 100px;
+    margin: 0px 100px 0px 100px;
+    text-shadow: 0px 2px 5px  black;
+
+  }
